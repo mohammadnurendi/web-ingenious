@@ -29,16 +29,6 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Ingenious Community — Learn, Grow, Connect" },
-      { name: "description", content: "Komunitas tempat bergerak, bertumbuh, dan memberi manfaat bersama." },
-    ],
-  }),
-  component: HomePage,
-});
-
 const fallbackIcons = [Heart, SparkIcon, Bike, UsersIcon];
 
 function HomePage() {
