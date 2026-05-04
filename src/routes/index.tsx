@@ -14,6 +14,25 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Ingenious Community — Learn, Grow, Connect" },
+      {
+        name: "description",
+        content: "Komunitas tempat bergerak, bertumbuh, dan memberi manfaat bersama.",
+      },
+    ],
+    links: [
+      {
+        rel: "icon",
+        href: "/favicon.ico",
+      },
+    ],
+  }),
+  component: HomePage,
+});
+
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ingenious Community — Learn, Grow, Connect" },
       { name: "description", content: "Komunitas tempat bergerak, bertumbuh, dan memberi manfaat bersama." },
     ],
   }),
